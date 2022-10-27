@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Youtube Downloader</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="{{ url_for("static", filename="style.css") }}" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="banner">
+		<h1 class="title" data-text="Youtube Download"><i class="fa fa-music"></i>Descargas de Youtube<i class="fa fa-video-camera"></i></h1>
+		<form method="POST">
+			<p>Pega el URL del video<input class="from-control" type="text" required name="url"></p>
+			<button class="bt0" type="submit" formaction="/nuevo">Envia</button>
+			<button class="btn" type="submit" formaction="/envia">Descargar en MP4</button>
+			<button class="btn1" type="submit" formaction="/envia2">Descargar en MP3</button>
+		</form>
+		<div style="margin-left:600px;margin-top:10px;">
+			<div>
+                <div>
+                    <img src="{{yid}}" style="height:100%;width:100%;">
+                </div>
+            </div>
+			<div>
+				<h1 style="color:rgb(235, 79, 8);">Infromación del video</h1>
+				<div>
+                    <div style="text-align:left;">
+                        <strong >Titulo:</strong>{{title}}
+                        <hr/>
+                        <strong>Duración:</strong>{{durat}}
+                        <hr/>
+                        <strong>Autor:</strong>{{author}}
+                        <hr/>
+                        <strong>Vistas:</strong>{{views}}
+                        <hr/>
+                        <strong>Categoría:</strong>{{category}}
+						<hr/>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Permanent+Marker', sans-serif;
+}
+
+body{
+	min-height: 100vh;
+	background-image: url(back.jpg);
+	display: grid;
+	place-items:center;
+}
+
+p{
+	color: #ffff;
+	position: absolute;
+	text-align: center;
+	font-size: 1.5em;
+	top:45%;
+	left:10%;
+}
+
+.banner{
+	position:relative;
+	min-height: 80vh;
+	width: 80%;
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	border-radius: 8px;
+	background:rgba(34, 34, 34);
+	box-shadow: inset 5px 5px 5px rgba(0,0,0,3),
+		inset -5px -5px 15px rgba(255,255,255,3),
+		5px 5px 15px rgba(0,0,0,3),
+		-5px -5px 15px rgba(255,255,255,3);
+}
+
+.banner .title{
+	position:fixed;
+	top: 15%;
+	Left:50%;
+	transform: translate(-50%,-50%);
+	margin:0;
+	padding: 0 30px;
+	font-size: 3em;
+	color: #fff;
+	text-shadow: 0 0  20px #09ff00;
+}
+
+.banner .title:after{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	Left: 0;
+	padding: 0 20px;
+	z-index: -1;
+	color: #003cff;
+	filter: blur(15px);
+}
+
+.banner .title:before{
+	content: '';
+	position: absolute;
+	top:0;
+	Left:0;
+	width:100%;
+	height:100%;
+	background: #573afe;
+	z-index: -2;
+	opacity: .5;
+	filter: blur(40px);
+}
+
+.banner .from-control{
+	box-sizing: content-box;
+	width:100%;
+	border: solid #ff1f1f 2px;
+	padding: 5px;
+}
+
+.banner .bt0{
+	position: absolute;
+	top: 50%;
+	Left: 50%;
+	padding: 10px 12px;
+	margin: 0 10px;
+	width: 6%;
+	height:7%;
+	text-decoration: none;
+	color: white;
+	background: #0a1fe0;
+	border-radius: 6px;
+	border-color: rgb(232, 236, 17);
+	box-shadow: 0 0 5px #0296f8, 0 0 15px #0296f8, 0 0 30px #0296f8, 0 0 60px #0296f8;
+	transition: 0.5s;
+}
+
+.banner .btn{
+	position: absolute;
+	top: 60%;
+	Left: 18%;
+	padding: 10px 12px;
+	margin: 0 10px;
+	width: 10%;
+	text-decoration: none;
+	color: white;
+	background: #ff1f1f;
+	border-radius: 6px;
+	border-color: rgb(232, 236, 17);
+	box-shadow: 0 0 5px #f80202, 0 0 15px #f80202, 0 0 30px #f80202, 0 0 60px #f80202;
+	transition: 0.5s;
+}
+.banner .btn1{
+	position: absolute;
+	top: 60%;
+	Left: 29%;
+	padding: 10px 12px;
+	margin: 0 10px;
+	width: 10%;
+	text-decoration: none;
+	color: white;
+	background: #ff1f1f;
+	border-radius: 6px;
+	border-color: rgb(232, 236, 17);
+	box-shadow: 0 0 5px #f80202, 0 0 15px #f80202, 0 0 30px #f80202, 0 0 60px #f80202;
+	transition: 0.5s;
+}
+
+
+
