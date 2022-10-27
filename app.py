@@ -6,6 +6,7 @@ import pafy
 import moviepy.editor as mp
 
 app = Flask(__name__)
+server = app.server
 
 path = os.getcwd() + '..\\Downloads\\'
 
