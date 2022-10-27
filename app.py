@@ -13,7 +13,7 @@ path = os.getcwd() + '\\Downloads\\ComponenteSOA-Eq4\\output\\'
 def route():
     return render_template("index.html")
 
-@app.route('/envia', methods=['GET', 'POST'])
+'''@app.route('/envia', methods=['GET', 'POST'])
 def envia():
     if request.method == 'POST':
         url = request.form.get('url')
@@ -21,7 +21,7 @@ def envia():
         best = video.getbest(preftype="mp4")
         best.download(path)
         p = path + video.title + ".mp4"
-    return send_file(p, as_attachment=True)
+    return send_file(p, as_attachment=True)'''
 
 @app.route('/nuevo', methods=['GET', 'POST'])
 def nuevo():
@@ -32,7 +32,7 @@ def nuevo():
                                durat=video.duration, author=video.author,
                                yid=video.thumb, views=video.viewcount, category=video.category)
 
-@app.route('/envia2', methods=['GET', 'POST'])
+'''@app.route('/envia2', methods=['GET', 'POST'])
 def envia2():
     if request.method == 'POST':
         url = request.form.get('url')
@@ -43,7 +43,7 @@ def envia2():
         clip = mp.VideoFileClip(name)
         clip.audio.write_audiofile(path + video.title + ".mp3")
         p = path + video.title + ".mp3"
-    return send_file(p, as_attachment=True)
+    return send_file(p, as_attachment=True)'''
 
 if __name__ == '__main__':
     app.run(debug=True)
